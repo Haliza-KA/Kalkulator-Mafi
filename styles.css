@@ -9,42 +9,53 @@ body {
 }
 
 .calculator {
-    background-color: #7b85f5;
+    background-color: #7b85f5; /* Warna latar belakang kalkulator */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    width: 250px;
+    width: 300px; /* Lebar kalkulator yang lebih besar */
+}
+
+h1 {
+    text-align: center; /* Memusatkan teks judul */
+    color: #fff; /* Warna teks judul putih */
+    margin-bottom: 20px; /* Jarak bawah judul */
 }
 
 #display {
     width: 100%;
     height: 40px;
     text-align: right;
-    margin-bottom: 10px;
-    font-size: 20px;
+    margin-bottom: 15px; /* Jarak bawah display */
+    font-size: 24px; /* Ukuran font lebih besar */
     padding: 5px;
     box-sizing: border-box;
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Radius border untuk tampilan halus */
+    background-color: #fff; /* Latar belakang putih untuk display */
+    color: #333; /* Warna teks di display */
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 10px; /* Jarak antar tombol */
 }
 
 button {
     padding: 15px;
-    font-size: 18px;
+    font-size: 20px; /* Ukuran font tombol lebih besar */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #f1c06be1;
+    background-color: #f1c06be1; /* Warna latar belakang tombol */
+    transition: background-color 0.3s ease; /* Transisi halus saat hover */
 }
 
 button:hover {
-    background-color: #d1d1d1;
+    background-color: #f1a200; /* Warna saat hover */
 }
 
 button:active {
-    background-color: #b5b5b5;
+    background-color: #c67c00; /* Warna saat tombol ditekan */
 }
